@@ -1,0 +1,13 @@
+<p>
+  Liste des livres disponibles ...
+</p>
+
+<div>
+  <input type="text" placeholder="Ajouter un livre" [(ngModel)]="livre">
+  <button (click)="ajouterLivres(livre)">Ajouter un Livre</button>
+</div>
+
+<ul><div style="margin-top: 20px">
+  Liste des livres disponibles:
+  <p *ngFor="let livre of listeLivres">Titre: {{ livre.titre }} , Prix: {{ livre.prix }}</p>
+</div>
